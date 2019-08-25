@@ -1,0 +1,172 @@
+body {
+  font-family: "";
+  margin: 0px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+#brand-logo {
+  font-size: 34px;
+}
+
+#app-navbar {
+  background: linear-gradient(120deg, #00e4d0, #5983e8);
+}
+
+.nav-item {
+  margin: 15px;
+}
+
+#presentation-text {
+  padding: 200px;
+  transition: 1s;
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+}
+
+#presentation-text:hover {
+  font-size: 60px;
+  color: lightseagreen;
+}
+
+
+#left-s {
+  text-align: center;
+  padding: 44px;
+}
+
+@media (min-width: 576px) {
+  #left-s {
+    text-align: center;
+    padding: 300px;
+  }
+}
+
+.h1, h1:hover {
+  color: lightseagreen;
+  font-size: 80px;
+}
+
+.h1, h1 {
+  transition: 1s;
+  color: white;
+  font-size: 25px;
+  font-family: 'Akronim';
+}
+
+@media (min-width: 576px) {
+  .h1, h1 {
+    transition: 1s;
+    color: white;
+    font-size: 60px;
+    font-family: 'Akronim';
+  }
+}
+
+a {
+  transition: 1s;
+  color: #8dabe4;
+}
+
+.presentation-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-image: url("images/Gamer Designer.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.link {
+  font-size: 10px;
+}
+
+@media (min-width: 500px) {
+  .link {
+    font-size: 30px;
+  }
+}
+
+section {
+  margin-top: 2px;
+}
+
+.left-s {
+  padding: 50px;
+  text-align: center;
+}
+
+@media (min-width: 576px) {
+  .left-s {
+    padding: 300px;
+    text-align: center;
+  }
+}
+
+/* Portfolio Styles */
+.portfolio-items-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.portfolio-item-wrapper {
+  position: relative;
+}
+
+.portfolio-img-background {
+  height: 350px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 800px) {
+  .portfolio-img-background {
+    height: 175px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+.img-text-wrapper {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.logo-wrapper img{
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+.img-text-wrapper .subtitle{
+  transition: 1s;
+  font-weight: 600;
+  color: transparent;
+}
+
+.img-text-wrapper:hover .subtitle {
+  font-weight: 600;
+  color: lightseagreen;
+}
+
+.img-darken {
+  transition: 1s;
+  filter: brightness(10%);
+}
+
+
+

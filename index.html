@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Ader Einstein Portfolio</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Acme">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Akronim">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Andika">
+    <link rel="stylesheet" href="gradient-navbar-1.css">
+    <link rel="stylesheet" href="assets/css/gradient-navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <div class="content">
+            <section class="nav-wrapper">
+                    <nav class="navbar navbar-dark navbar-expand-md shadow-lg" id="app-navbar">
+                            <div class="container-fluid">
+                                <a class="navbar-brand" href="#"><img src="images/logop.png" width="150" height="100"></a>
+                                <button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navcol-1">
+                                    <ul class="nav navbar-nav ml-auto">
+                                        <li class="nav-item" role="presentation"><a class="nav-link active" href="#">Home</a></li>
+                                        <li class="nav-item" role="presentation"><a class="nav-link" href="#">Games</a></li>
+                                        <li class="nav-item" role="presentation"><a class="nav-link" href="#">Piano</a></li>
+                                        <li class="nav-item" role="presentation"><a class="nav-link" href="#">Drawings</a></li>
+                                        <li class="nav-item" role="presentation"><a class="nav-link" href="#">About</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+            </section>
+            
+    
+            <section class="border rounded shadow presentation-wrapper">
+                <div class="left-s">
+                    <h1 class="rubberBand animated">ADER<br>EINSTEIN</h1>
+                    <div id="low"><a class="link" href="games.html">View my work</a></div>
+                </div>
+                <div id="right-s"></div>
+            </section>
+    
+            <section class="border rounded presentation-content-transition rounded"><img src="images/joystickHor.PNG" width="100%" height="100%"></section>
+    
+            <section class="border rounded portfolio-items-wrapper">
+                <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(images/GameDevelopper.jpg)"></div>
+    
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                    <img src="images/logos/joystick.png" alt="">
+                    </div>
+    
+                    <div class="subtitle">The best way to predict the future is to create it..</div>
+                </div>
+                </div>
+    
+                <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(images/PianoMan.jpg)"></div>
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                    <img src="images/logos/MusicNotes.png" alt="">
+                    </div>
+    
+                    <div class="subtitle">Music is Life. That's why our Hearts have Beats.</div>
+                </div>
+                </div>
+    
+                <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(images/Drawing.png)"></div>
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                    <img src="images/logos/ArtPalette.png" alt="">
+                    </div>
+    
+                    <div class="subtitle">I sometimes think there is nothing as delightful as finishing a realistic pencil art.</div>
+                </div>
+                </div>
+    
+                <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(images/SoccerBoot.jpg)"></div>
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                    <img src="images/logos/Etoo.png" alt="">
+                    </div>
+    
+                    <div class="subtitle">Life is like Soccer. We need Goals.</div>
+                </div>
+                </div>
+    
+                <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(images/Education.jpg)"></div>
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                    <img src="images/logos/Graduation.png" alt="">
+                    </div>
+    
+                    <div class="subtitle">Every day is a new opportunity to learn and experience some-thing and some-one new.</div>
+                </div>
+                </div>
+    
+                <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(images/DoingMe.jpg)"></div>
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                    <img src="images/logos/I.png" alt="">
+                    </div>
+    
+                    <div class="subtitle">Check me out.</div>
+                </div>
+                </div>
+            </section>
+            <script src="assets/js/jquery.min.js"></script>
+            <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    </div>
+        
+</body>
+
+<script>
+        const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+        
+        portfolioItems.forEach(portfolioItem => {
+            portfolioItem.addEventListener('mouseover', () => {
+                portfolioItem.childNodes[1].classList.add('img-darken');
+            })
+    
+            portfolioItem.addEventListener('mouseout', () => {
+                portfolioItem.childNodes[1].classList.remove('img-darken');
+            })
+        })
+</script>
+
+</html>
