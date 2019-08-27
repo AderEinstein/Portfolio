@@ -1,0 +1,158 @@
+body {
+    font-family: "";
+    margin: 0px;
+  }
+  
+.container {
+display: grid;
+grid-template-columns: 1fr;
+}
+
+#brand-logo {
+font-size: 34px;
+}
+
+#app-navbar {
+background: linear-gradient(120deg, #00e4d0, #5983e8);
+}
+
+.nav-item {
+margin: 15px;
+}  
+
+
+.toggle-bar {
+
+  background-image: url("images/Gamer Designer.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 7px;
+  padding-bottom: 5px;
+  text-align: center;
+
+}
+
+/* Portfolio Styles */
+.portfolio-items-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  
+  @media (max-width: 576px)
+  {
+    .portfolio-items-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  .portfolio-item-wrapper {
+    position: relative;
+  }
+  
+  .portfolio-img-background {
+    height: 400px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  @media (max-width: 1000px) {
+    .portfolio-items-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media (max-width: 800px) {
+  }
+  
+  @media (max-width: 576px) {
+    .portfolio-items-wrapper {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  
+  .img-text-wrapper {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  @media (max-width: 1000px) {
+    .img-text-wrapper {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+  }
+  
+  @media (max-width: 800px) {
+    .img-text-wrapper {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .img-text-wrapper {
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+  }
+  
+  .logo-wrapper img{
+    width: 50%;
+    margin-bottom: 20px;
+  }
+  
+  .img-text-wrapper .subtitle{
+    transition: 1s;
+    font-weight: 600;
+    font-size: 20px;
+    color: transparent;
+    
+  }
+  
+  #zelda {
+    font-size: 14px;
+  }
+
+  #mario {
+    font-size: 18px;
+  }
+
+  #match3 {
+    font-size: 16px;
+  }
+
+  #break-out {
+
+  }
+
+  #flappy-bird {
+    font-size: 13.25px;
+  }
+
+  #pong {
+
+  }
+
+  
+  .img-text-wrapper:hover .subtitle {
+    color: lightseagreen;
+  }
+  
+  .img-darken {
+    transition: 1s;
+    filter: brightness(10%);
+  }
+  

@@ -1,63 +1,102 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html>
 
 <head>
-  <meta charset='UTF-8'>
-  <title>Portfolio Homepage</title>
-  
-  <link href="https://fonts.googleapis.com/css?family=Grenze&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=yes">
+    <title>Ader Einstein Music</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Acme">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Akronim">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Andika">
+    <link rel="stylesheet" href="gradient-navbar-1.css">
+    <link rel="stylesheet" href="css/gradient-navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-  <div class="container">
-    <div class="nav-wrapper bg">
-      <div class="left-side">
-        <div class="nav-link-wrapper">
-          <a href="index.html">Home</a>
-        </div>
+    <div class="content">
+            <section class="nav-wrapper">
+                    <nav class="navbar navbar-dark navbar-expand-md shadow-lg" id="app-navbar">
+                            <div class="container-fluid">
+                                <a class="navbar-brand" href="index.html"><img src="images/logop.png" width="150" height="100"></a>
+                                <button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navcol-1">
+                                    <ul class="nav navbar-nav ml-auto">
+                                        <li class="nav-item" role="presentation"><a class="nav-link" href="index.html">Home</a></li>
+                                        <li class="nav-item" role="presentation"><a class="nav-link" href="game-description.html">Games</a></li>
+                                        <li class="nav-item" role="presentation"><a class="nav-link active" href="music.html">Music</a></li>
+                                        <li class="nav-item" role="presentation"><a class="nav-link" href="drawings.html">Drawings</a></li>
+                                        <li class="nav-item" role="presentation"><a class="nav-link" href="about.html">About</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+            </section>
 
-        <div class="nav-link-wrapper">
-            <a href="games.html">Game Projects</a>
-        </div>
+            <section class="toggle-bar">
+              <form>
+                <a href="music.html" class="btn btn-primary btn-lg" role="button" aria-pressed="true">Piano</a>
+                <button class="btn btn-secondary btn-lg" type="submit">Guitar</button>
+              </form>
 
-        <div class="nav-link-wrapper active-nav-link">
-            <a href="music.html">Piano</a>
-        </div>
-
-        <div class="nav-link-wrapper">
-            <a href="drawings.html">Drawings</a>
-        </div>
-
-        <div class="nav-link-wrapper">
-            <a href="sports.html">Soccer</a>
-        </div>
-
-        <div class="nav-link-wrapper">
-            <a href="education.html">Education</a>
-        </div>
-
-        <div class="nav-link-wrapper">
-          <a href="about.html">About</a>
-        </div>
-
-      </div>
-
-      <div class="right-side">
-            <div class="brand">
-              <img src="images/logop.png" alt="" width="150" height="100">
-            </div>
-          </div>
-    </div>
-
-
-    <div class="content-wrapper">
+            </section>
     
+            <section class="border rounded games-wrapper">
+                <div class="game-item-wrapper">
+                  <div class="video-wrapper">
+                      <iframe src="https://www.youtube.com/embed/Wf8E9OuEZbk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                </div>
+    
+                <div class="game-item-wrapper">
+                  <div class="video-wrapper">
+                      <iframe src="https://www.youtube.com/embed/SAU5IkPq-58" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                </div>
+    
+                <div class="game-item-wrapper">
+                  <div class="video-wrapper">
+                      <iframe src="https://www.youtube.com/embed/Bh4jgHTQCzs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                </div>
+    
+                <div class="game-item-wrapper">
+                  <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/RXdSJQD-Djs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                </div>
+    
+                <div class="game-item-wrapper">
+                  <div class="video-wrapper">
+                      <iframe src="https://www.youtube.com/embed/3zXc90GQovg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                </div>
+    
+                <div class="game-item-wrapper">
+                  <div class="video-wrapper">
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/XsjRjonzPpI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                </div>
+                
+                
+            </section>
+            <script>
+              document.querySelector('form').onsubmit = function() {
+                alert('Working on my Guitar stuff :)');
+                return false;
+              }
+            </script>
+            <script src="js/jquery.min.js"></script>
+            <script src="bootstrap.min.js"></script>
     </div>
-
-  </div>
+        
 </body>
+
 
 
 </html>
