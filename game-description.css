@@ -87,6 +87,14 @@ margin: 15px;
     padding-left: 10px;
     padding-right: 10px;
   }
+
+  @media (min-width: 1400px) {
+    .img-text-wrapper {
+      padding-left: 100px;
+      padding-right: 100px;
+    }
+  }
+
   
   @media (max-width: 1000px) {
     .img-text-wrapper {
