@@ -1,0 +1,344 @@
+body {
+  font-family: 'Grenze', serif;
+    margin: 0px;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  
+  #brand-logo {
+    font-size: 34px;
+  }
+  
+  #app-navbar {
+    background: linear-gradient(120deg, #00e4d0, #5983e8);
+  }
+  
+  .nav-item {
+    margin: 15px;
+  }
+  
+  #presentation-text {
+    padding: 200px;
+    transition: 1s;
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  #presentation-text:hover {
+    font-size: 60px;
+    color: lightseagreen;
+  }
+  
+  #left-s {
+    text-align: center;
+    padding: 44px;
+  }
+  
+  @media (min-width: 576px) {
+    #left-s {
+      text-align: center;
+      padding: 300px;
+    }
+  }
+  
+  .left-s h1:hover {
+    color: lightseagreen;
+    font-size: 80px;
+  }
+  
+  .left-s h1 {
+    transition: 1s;
+    color: white;
+    font-size: 25px;
+    font-family: 'Akronim';
+  }
+  
+  @media (min-width: 576px) {
+    .left-s h1 {
+      transition: 1s;
+      color: white;
+      font-size: 60px;
+      font-family: 'Akronim';
+    }
+  }
+  
+  a {
+    transition: 1s;
+    color: #8dabe4;
+  }
+  
+  .presentation-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-image: url("images/Gamer Designer.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .link {
+    font-size: 10px;
+  }
+  
+  @media (min-width: 500px) {
+  .link {
+      font-size: 30px;
+    }
+  }
+  
+  section {
+    margin-top: 2px;
+  }
+  
+  .left-s {
+    padding: 50px;
+    text-align: center;
+  }
+  
+  @media (min-width: 576px) {
+    .left-s {
+      padding: 300px;
+      text-align: center;
+    }
+  }
+  
+  /* Portfolio Styles */
+  .portfolio-items-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  
+  @media (max-width: 576px)
+  {
+    .portfolio-items-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  .portfolio-item-wrapper {
+    position: relative;
+  }
+  
+  .portfolio-img-background {
+    height: 350px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  @media (max-width: 1000px) {
+    .portfolio-img-background {
+      height: 250px;
+    }
+  }
+  
+  @media (max-width: 800px) {
+    .portfolio-img-background {
+      height: 175px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .portfolio-img-background {
+      height: 150px;
+    }
+  }
+  
+  
+  .img-text-wrapper {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  
+  @media (max-width: 1000px) {
+    .img-text-wrapper {
+      padding-left: 70px;
+      padding-right: 70px;
+    }
+  }
+  
+  @media (max-width: 800px) {
+    .img-text-wrapper {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .img-text-wrapper {
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+  }
+  
+  .logo-wrapper img{
+    width: 50%;
+    margin-bottom: 20px;
+  }
+  
+  .img-text-wrapper .subtitle{
+    transition: 1s;
+    font-weight: 600;
+    font-size: 20px;
+    color: transparent;
+  }
+  
+  @media (max-width: 1000px) {
+    .img-text-wrapper .subtitle{
+      font-size: 15px;
+    }
+  }
+  
+  @media (max-width: 800px) {
+    .img-text-wrapper .subtitle{
+      font-size: 12px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .img-text-wrapper .subtitle{
+      font-size: 10px;
+    }
+  }
+  
+  .img-text-wrapper:hover .subtitle {
+    color: lightseagreen;
+  }
+  
+  .img-darken {
+    transition: 1s;
+    filter: brightness(10%);
+  }
+  
+  
+  /* Games Page */
+    
+  .games-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  
+  @media (max-width: 800px)
+  {
+    .games-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media (max-width: 570px)
+  {
+    .games-wrapper {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  
+  .toggle-bar {
+  
+    background-image: url("images/Gamer Designer.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 7px;
+    padding-bottom: 5px;
+    text-align: center;
+  
+  }
+  
+  
+  .video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    height: 0px;
+  }
+  
+  .video-wrapper iframe{
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    right: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+  }
+  
+  
+  article.game-description {
+    box-shadow: 5px 5px 5px 5px;
+    padding: 25px;
+    margin: 25px;
+  
+    height: 350px;
+    width: 100%;
+  
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  
+  .game-description-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  
+  
+  /*.game-item-wrapper {
+    position: relative;
+  }*/
+  
+    
+  
+  /* About Page */
+  .two-column-wrapper {
+    display: grid;
+    grid-template-columns: 1.5fr 0.5fr
+  }
+  
+  @media (max-width: 900px)
+  {
+    .two-column-wrapper {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  .profile-image-wrapper img{
+    width: 100%;
+    height: 100%;
+  }
+  
+  
+  @media (max-width: 500px)
+  {
+    .profile-image-wrapper img {
+      height: 400px;
+    }
+  
+  }
+  
+  .profile-content-wrapper {
+    padding: 30px;
+  }
+  
+  .profile-content-wrapper h1 {
+    color: lightseagreen;
+  }
+  
+  
+  
