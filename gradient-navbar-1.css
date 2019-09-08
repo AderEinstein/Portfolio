@@ -71,6 +71,10 @@ body {
     color: #8dabe4;
   }
   
+  #low-top a{
+    color: #ffffff;
+  }
+  
   .presentation-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
